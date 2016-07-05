@@ -13,6 +13,10 @@
 
 /* FourColour Style */
 
+body{
+  padding-top: 50px;
+}
+
 .fcstyle_1 .fcseparator {
   width: 100%;
   height: 20px;
@@ -25,6 +29,10 @@
 .fcstyle_1 strong {
   color: #EE504C;
   font-weight: 500;
+}
+
+.navbar-inverse .navbar-nav > .fcstyle_1.active > a{
+  color: #EE504C;
 }
 
 .fcstyle_2 .fcseparator {
@@ -41,6 +49,10 @@
   font-weight: 500;
 }
 
+.navbar-inverse .navbar-nav > .fcstyle_2.active > a{
+  color: #339BEB;
+}
+
 .fcstyle_3 .fcseparator {
   width: 100%;
   height: 20px;
@@ -53,6 +65,10 @@
 .fcstyle_3 strong{
   color: #2DD700;
   font-weight: 500;
+}
+
+.navbar-inverse .navbar-nav > .fcstyle_3.active > a{
+  color: #2DD700;
 }
 
 .make-red{
@@ -69,6 +85,10 @@
 
 .space{
   padding: 10px 0;
+}
+
+.toppadding{
+  padding: 25px;
 }
 
 /* Sticky footer styles
