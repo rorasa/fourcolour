@@ -1,0 +1,60 @@
+{% extends 'partials/base.html.twig' %}
+
+{% block header %}
+<nav id="topnav" class="navbar navbar-default navbar-inverse navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">
+        <img alt="Brand" src="{{ theme_url }}/images/brand.jpeg"></a>
+      <a class="navbar-brand" href="#">FourColour</a>
+    </div>
+    <div class="navbar-collapse collapse">
+      <ul class="nav navbar-nav navbar-right">
+        <div class="navbar-collapse-padding visible-xs-block"></div>
+        <li><a href="#">Home</a></li>
+        {% for module in page.collection() %}
+          {% set current_page = (module.active or module.activeChild) ? 'active' : '' %}
+          <li class="{{ current_page }} {{ module.header.style }}"><a href="#{{ module.header.id }}">{{ module.menu }}</a></li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</nav>
+{% endblock %}
+
+{% block bottom %}
+  {{ parent() }}
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="{{ theme_url }}/js/bootstrap.min.js"></script>
+  <script>
+  $(function() {
+  $('a[href*="#"]:not([href="#"])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html, body').animate({
+          scrollTop: target.offset().top
+          }, 500);
+        return false;
+        }
+      }
+    });
+  });
+  </script>
+{% endblock %}
+
+{% block content %}
+  {{ page.content }}
+  {% for module in page.collection() %}
+      <div class="{{ module.header.style}}">
+      {{ module.content }}
+      </div>
+  {% endfor %}
+{% endblock %}

@@ -42,10 +42,10 @@
     {% endblock head %}
   </head>
 
-  <body>
-    {% include 'partials/header.html.twig' %}
+  <body data-spy="scroll" data-target="#topnav">
+    {% block header %}{% endblock %}
 
-    <div class="container">
+    <div class="container-fluid">
       {% block content %}{% endblock %}
     </div>
 
