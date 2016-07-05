@@ -17,6 +17,10 @@ body{
   padding-top: 50px;
 }
 
+.navbar-collapse-padding {
+  padding-top: 30px;
+}
+
 .fcstyle_1 .fcseparator {
   width: 100%;
   height: 20px;
