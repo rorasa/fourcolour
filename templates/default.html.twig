@@ -5,5 +5,12 @@
 {% endblock %}
 
 {% block content %}
-  {{ page.content }}
+  <div class="col-md-1"></div>
+  <div class="col-md-10">
+    <div class="space"></div> 
+    <h1 class="text-center"> {{ page.header.title }} </h1>
+    <div class="space"></div>
+    {{ page.content }}
+  </div>
+  <div class="col-md-1"></div>
 {% endblock %}
