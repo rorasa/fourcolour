@@ -38,6 +38,19 @@ body{
 .navbar-inverse .navbar-nav > .fcstyle_1.active > a{
   color: #EE504C;
 }
+.navbar-nav > .fcstyle_1.active > a{
+  background-color: #EE504C;
+  color: white;
+}
+
+.fcstyle_1 .icon {
+  margin: 0 10px;
+  text-decoration: none;
+  color: black;
+}
+.fcstyle_1 .icon:hover {
+  color: #EE504C;
+}
 
 .fcstyle_2 .fcseparator {
   width: 100%;
@@ -55,6 +68,10 @@ body{
 
 .navbar-inverse .navbar-nav > .fcstyle_2.active > a{
   color: #339BEB;
+}
+.navbar-nav > .fcstyle_2.active > a {
+  background-color: #339BEB;
+  color: white;
 }
 
 .fcstyle_3 .fcseparator {
@@ -74,6 +91,10 @@ body{
 .navbar-inverse .navbar-nav > .fcstyle_3.active > a{
   color: #2DD700;
 }
+.navbar-nav > .fcstyle_3.active > a {
+  background-color: #2DD700;
+  color: white;
+}
 
 .make-red{
   color: #EE504C;
@@ -88,11 +109,20 @@ body{
 }
 
 .space{
-  padding: 10px 0;
+  padding: 20px 0;
 }
 
 .toppadding{
   padding: 25px;
+}
+
+.researchgate-icon {
+    width: 32px;
+    height: 32px;
+    position: relative;
+    top: 2px;
+    display: inline-block;
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAEbgAABG4B0KOyaAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAJ2SURBVFiF7ZdLS1VRFMd/fzW99lChh020hCtNI4yiQVCDSwRRXyBqGAgOHDQs6SMUNZAIayRE5aRpUlAgPYSiQQ8kZ1oUlUaBeFeDs48st+ce7xW8Tlxw2Oux11r/vfda5+wjMwNAUiOwhfrQgpktAhAADAJzgNXpmQMGzQwBjcBPYPu6rnklzQMdAgrA3zonT6m1YYMSL9EmgKZIfg7crjC3HegFzgDdFebMAreAV8AboBUoAqeAgYx8QFKEaXuMmBl5T5h/nZWtNQUUc/wOkVS+9ynkAgDagLaMYE3ApPMrAz3O3gycBg5GfldqBfAl6N8BFyLbVef3LLLdDfpFoOT0u9cKwIAZoMHZzjtbf3REZWcbi2L+8gAyi6ICdQJ7AhCALmd76fhuQE4+KmnIyQs+aC0AXpvZjJOPO/674/dFfp0kx5VJqwH4FsZxYDhVSmoHjlUJIJdyAZjZ4VgnqQ+4CewIqjLJuaaUHs0kcC0j7ABwoioAGcmbgR6SL+iSOsYdxq9mNpYR45yXcwFIugHsIlnNvVAD9yWNA5+AjgBgG8lLBuBfGFsl7Q/8tKU3nwyqtg0fRbYHzrbX6ftZ3usGFJx9xOtr+RiVIvm949sc/zHDd7FS0FoAbJXU4uTfju9z/Nso4bSZLev9tQIA8AB85Z9MGTObBe6kIjCUF7CmLiCpl3TlP5y+JKlgZmkBXgJGgT9mNpEXsNYd2On4z47vAkbD1R4zK5vZEzObkNQiKet9AKzcgaKki06Ob8qXJT118gfgQODPAo8lPQRekOzUEZLd6JU0lebwATdvxZsAGkguCPOrTVwHmgcWNv7ndKN/z/8DujyzRZO8MegAAAAASUVORK5CYII740c1a8889d893580884d3a3ca837b72');
 }
 
 /* Sticky footer styles
